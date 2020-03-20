@@ -113,9 +113,15 @@ class SortingRobot:
         # first step is to pick up the first item in list
 
         self.swap_item()
-        while self.can_move_right() == True:
-            self.move_right()
-            if self.compare_item() == -1
+        for i in range(len(self._list)):
+            if self.can_move_right() == True:
+                self.move_right()
+                # if self.compare_item() == -1
+            # else:
+                # while can_move_left() == True:
+                    # self.move_left()
+                # continue
+            
 
 
 
@@ -129,4 +135,5 @@ if __name__ == "__main__":
     robot = SortingRobot(l)
     robot.sort()
     print(robot._item)
-    print(robot.can_move_right())
+    # print(robot.can_move_right())
+    # print(robot._list)
